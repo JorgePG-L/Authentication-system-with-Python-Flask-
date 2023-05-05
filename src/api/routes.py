@@ -9,13 +9,13 @@ from flask_jwt_extended import create_access_token, jwt_required, get_jwt
 import os
 
 api = Blueprint('api', __name__)
-
+#Post
 
 @api.route('/hello', methods=['POST', 'GET'])
 def handle_hello():
 
     response_body = {
-        "message": "Hello! I'm a message that came from the backend, check the network tab on the google inspector and you will see the GET request"
+        "message": "ok"
     }
 
     return jsonify(response_body), 200
